@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя страница</title>
+</head>
+<body>
+    <h1>Список блюд</h1>
+    <p>Что бы узнать список и кол-во ингридентов конкретного блюда
+    добавьте в конце URL название блюда. Пример www.address.com<b>/omlet</b> </p>
+    <ul>{% for bludo in recipes %}
+        <li>{{ bludo }}</li>
+    {% endfor %}</ul>
+</body>
+</html>
