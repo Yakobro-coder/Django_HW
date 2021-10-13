@@ -16,7 +16,7 @@ def bus_stations(request):
         bas_book = []
         for row in reader:
             bas_book.append(row)
-            
+
     page = int(request.GET.get('page', 1))
     pagi = Paginator(bas_book, 10)
 
