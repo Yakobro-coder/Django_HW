@@ -1,9 +1,6 @@
-import datetime
-
 from django.shortcuts import render
 from books.models import Book
 from datetime import date
-from django.core.paginator import Paginator
 
 
 def books_view(request, year=None, mouth=None, day=None):
