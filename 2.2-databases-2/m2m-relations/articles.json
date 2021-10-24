@@ -31,44 +31,62 @@
   },
   {
     "model": "articles.tag",
-    "pk": 1,
     "fields": {
       "name": "Культура"
     }
   },
   {
     "model": "articles.tag",
-    "pk": 2,
     "fields": {
       "name": "Город"
     }
   },
   {
     "model": "articles.tag",
-    "pk": 3,
     "fields": {
       "name": "Здоровье"
     }
   },
   {
     "model": "articles.tag",
-    "pk": 4,
     "fields": {
       "name": "Наука"
     }
   },
   {
     "model": "articles.tag",
-    "pk": 5,
     "fields": {
       "name": "Космос"
     }
   },
   {
     "model": "articles.tag",
-    "pk": 6,
     "fields": {
       "name": "Международние отношения"
+    }
+  },
+  {
+    "model": "articles.tag",
+    "fields": {
+      "name": "Е"
+    }
+  },
+  {
+    "model": "articles.tag",
+    "fields": {
+      "name": "Я"
+    }
+  },
+  {
+    "model": "articles.tag",
+    "fields": {
+      "name": "Н"
+    }
+  },
+  {
+    "model": "articles.tag",
+    "fields": {
+      "name": "А"
     }
   },
   {
@@ -131,6 +149,42 @@
     "fields": {
       "article": 3,
       "tag": 4,
+      "is_main": false
+    }
+  },
+  {
+    "model": "articles.scope",
+    "pk": 8,
+    "fields": {
+      "article": 2,
+      "tag": 7,
+      "is_main": false
+    }
+  },
+  {
+    "model": "articles.scope",
+    "pk": 9,
+    "fields": {
+      "article": 2,
+      "tag": 8,
+      "is_main": false
+    }
+  },
+  {
+    "model": "articles.scope",
+    "pk": 10,
+    "fields": {
+      "article": 2,
+      "tag": 9,
+      "is_main": false
+    }
+  },
+  {
+    "model": "articles.scope",
+    "pk": 11,
+    "fields": {
+      "article": 2,
+      "tag": 10,
       "is_main": false
     }
   }
