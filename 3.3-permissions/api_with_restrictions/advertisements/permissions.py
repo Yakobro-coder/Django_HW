@@ -13,8 +13,4 @@ class Authorization(BasePermission):
         if request.method in SAFE_METHODS:
             return True
 
-        elif request.user == obj.creator:
-            return True
-
-        elif request.user and request.user.is_superuser:
-            return True
+        return request.user == obj.creator or request.user.is_superuser
