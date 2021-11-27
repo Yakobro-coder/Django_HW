@@ -24,9 +24,9 @@ class AdvertisementViewSet(ModelViewSet):
     #     return []
 
     def get_queryset(self):
-        queryset = Advertisement.objects.exclude(status='DRAFT')
+        queryset = Advertisement.objects.exclude(status='DRAFT').select_related()
         if self.request.user.is_authenticated:
-            queryset_draft = Advertisement.objects.filter(status='DRAFT', creator=self.request.user)
+            queryset_draft = Advertisement.objects.filter(status='DRAFT', creator=self.request.user).select_related()
             full_queryset = queryset.union(queryset_draft)
             return full_queryset
         else:
